@@ -511,7 +511,7 @@
                 const userAnswer = userAnswers[index + 1];
                 const correctAnswer = questionObj.correctAnswer;
                 if (userAnswer !== correctAnswer) {
-                    resultsHTML += `<p class="wrong">Question ${index + 1}: You answered "${userAnswer}", the correct answer was "${correctAnswer}".</p>`;
+                    resultsHTML += `<p class="wrong">Question ${index + 1}: <strong>${questionObj.question}</strong><br>You answered "${userAnswer}", the correct answer was "${correctAnswer}".</p>`;
                 } else {
                     resultsHTML += `<p>Question ${index + 1}: Correct!</p>`;
                 }
